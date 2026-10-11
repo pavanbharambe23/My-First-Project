@@ -1,0 +1,90 @@
+/* ==========================================================================
+   Demo CSS Stylesheet (styles.css)
+   ========================================================================== */
+
+/* 1. Global Resets & Document Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #f4f7f6;
+  padding: 20px;
+}
+
+/* 2. Typography Styles */
+h1, h2, h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+h1 { font-size: 2.5rem; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+h2 { font-size: 1.8rem; margin-top: 20px; }
+p { margin-bottom: 15px; }
+
+/* 3. Layout Components */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 4. Common Reusable Classes */
+.text-center { text-align: center; }
+.text-muted { color: #7f8c8d; }
+
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 15px 0;
+  background-color: #fafafa;
+}
+
+/* 5. Interactive Components (Buttons & Links) */
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #2ecc71;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #27ae60;
+  text-decoration: none;
+}
+
+/* 6. Utility ID Example */
+#main-footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+  font-size: 0.85rem;
+}
